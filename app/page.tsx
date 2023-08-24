@@ -19,7 +19,9 @@ export default function Home() {
                 className="rounded-full w-32 md:w-48"
               />
               <div className="flex-col my-auto mx-8">
-                <h1 className="text-2xl font-semibold">Andrea Lopez</h1>
+                <h1 className="text-2xl md:text-5xl font-semibold">
+                  Andrea Lopez
+                </h1>
                 <div className="flex space-x-2 font-sans text-gray-200">
                   <Link href="/cv">
                     <p className="hover:text-black">CV</p>
