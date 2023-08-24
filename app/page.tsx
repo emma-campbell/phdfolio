@@ -3,22 +3,23 @@ import Headshot from "@/public/headshot.png";
 import Link from "next/link";
 import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
+import { Heading } from "@/components/ui/typography/heading";
 
 export default function Home() {
   return (
     <>
-      <main className="max-h-screen min-h-screen bg-off-white content-center px-4 md:px-0">
-        <div className="flex-col mx-auto max-w-xl" id="content">
+      <main className="max-h-screen min-h-screen bg-off-white content-center">
+        <div className="flex-col mx-auto max-w-xl px-4 md:px-0" id="content">
           <Header />
           <section className="flex-col space-y-12 pb-12">
             <div className="flex">
               <Image
                 src={Headshot}
                 alt="Photo of Andrea Lopez"
-                className="rounded-full w-48"
+                className="rounded-full w-32 md:w-48"
               />
               <div className="flex-col my-auto mx-8">
-                <h1 className="text-5xl">Andrea Lopez</h1>
+                <h1 className="text-2xl font-semibold">Andrea Lopez</h1>
                 <div className="flex space-x-2 font-sans text-gray-200">
                   <Link href="/cv">
                     <p className="hover:text-black">CV</p>

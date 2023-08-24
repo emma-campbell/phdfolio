@@ -2,7 +2,11 @@ import Footer from "@/components/ui/footer";
 import Header from "@/components/ui/header";
 import { Body } from "@/components/ui/typography/body";
 import { Heading } from "@/components/ui/typography/heading";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Publications",
+};
 /**
  * The publications page is responsible for listing all
  * publications from Andrea.

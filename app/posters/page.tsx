@@ -3,6 +3,11 @@ import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
 import { Heading } from "@/components/ui/typography/heading";
 import { Body } from "@/components/ui/typography/body";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Posters",
+};
 
 export default function Posters() {
   return (

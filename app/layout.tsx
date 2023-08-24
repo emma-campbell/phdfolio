@@ -6,7 +6,10 @@ const inter = Inter({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin", "latin-ext"] });
 
 export const metadata: Metadata = {
-  title: "Andrea Lopez",
+  title: {
+    template: "Andrea Lopez | %s",
+    default: "Andrea Lopez",
+  },
   description:
     "Andrea Lopez is a clinical research coordinator at Children's National Hopsital's Center for Autism Spectrum Disorders. Her passions include interventions within the Latinx, LGBTQ, and other underserved communities.",
 };
