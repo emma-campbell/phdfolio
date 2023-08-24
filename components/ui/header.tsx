@@ -18,7 +18,7 @@ const links = [
 
 export default function Header() {
   return (
-    <nav className={`w-full flex-col pb-8`}>
+    <nav className={`w-full flex-col pb-8 pt-8`}>
       <div className="flex justify-between my-auto items-baseline pb-2">
         <Link href="/">
           <h1 className="text-2xl font-semibold">Andrea Lopez</h1>
