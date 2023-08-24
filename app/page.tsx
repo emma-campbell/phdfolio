@@ -7,7 +7,7 @@ import Footer from "@/components/ui/footer";
 export default function Home() {
   return (
     <>
-      <main className="max-h-screen min-h-screen bg-off-white content-center">
+      <main className="max-h-screen min-h-screen bg-off-white content-center px-4 md:px-0">
         <div className="flex-col mx-auto max-w-xl" id="content">
           <Header />
           <section className="flex-col space-y-12 pb-12">
