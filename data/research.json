@@ -1,0 +1,118 @@
+[
+  {
+    "key": "CASD",
+    "when": {
+      "start": "07/2021",
+      "end": "Current"
+    },
+    "title": "Clinical Research Coordinator",
+    "lab": "Center for Autism Spectrum Disorders (CASD)",
+    "locations": [
+      {
+        "where": "Children's National Hopsital",
+        "department": "Department of Neuropsychology"
+      }
+    ],
+    "pis": [
+      "Lauren Kenworthy, PhD",
+      "Allison Ratto, PhD",
+      "Cara Pugliese, PhD",
+      "Alyssa Verbalis, PhD"
+    ]
+  },
+  {
+    "key": "URGCH",
+    "when": {
+      "start": "05/2020",
+      "end": "09/2020"
+    },
+    "lab": "Golisano Children's Hospital",
+    "title": "ASD Diagnostic Practice Research Assistant",
+    "locations": [
+      {
+        "where": "University of Rochester",
+        "department": "Developmental and Behavioral Pediatrics"
+      },
+      {
+        "where": "Tufts University School of Medicine",
+        "department": "Institute for Clinical Research and Health Policy Studies"
+      }
+    ],
+    "pis": [
+      "Christina Mulé, PhD",
+      "Tara Lavelle, PhD"
+    ]
+  },
+  {
+    "when": {
+      "start": "09/2019",
+      "end": "09/2020"
+    },
+    "title": "Undergraduate Research Assistant",
+    "lab": "Developmental Nueropsychology Lab (DNL)",
+    "locations": [
+      {
+        "where": "University of Rochester",
+        "department": "Department of Neuropsychology"
+      }
+    ],
+    "pis": [
+      "Jessica Keith, PhD",
+      "Loisa Bennetto, PhD"
+    ]
+  },
+  {
+    "key": "URSMH",
+    "when": {
+      "start": "01/2019",
+      "end": "01/2020"
+    },
+    "title": "Research Assistant",
+    "lab": "Strong Memorial Hospital Emergency Department",
+    "locations": [
+      {
+        "where": "University of Rochester",
+        "department": "Strong Memorial Hospital"
+      }
+    ],
+    "pis": [
+      "Nancy Wood, MS"
+    ]
+  },
+  {
+    "key": "URAAML",
+    "when": {
+      "start": "09/2018",
+      "end": "12/2018"
+    },
+    "title": "Research Assistant",
+    "lab": "Approach-Avoidance Motivation Lab",
+    "locations": [
+      {
+        "where": "University of Rochester",
+        "department": "Department of Psychology"
+      }
+    ],
+    "pis": [
+      "Andrew Elliot, PhD"
+    ]
+  },
+  {
+    "key": "BJILAB",
+    "when": {
+      "start": "06/2018",
+      "end": "08/2018"
+    },
+    "title": "Research Intern",
+    "lab": "Bermans J. Iskandar Lab",
+    "locations": [
+      {
+        "where": "University of Wisconsin - Madison",
+        "department": "Department of Nuerological Surgery"
+      }
+    ],
+    "pis": [
+      "Bermans Iskandar, PhD"
+    ]
+  }
+]

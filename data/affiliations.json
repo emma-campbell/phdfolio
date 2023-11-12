@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Psi Chi",
+    "where": "University of Rochester Chapter",
+    "role": "Student Member"
+  },
+  {
+    "name": "American Psychological Association (APA)",
+    "role": "Student Member"
+  },
+  {
+    "name": "International Society for Autism Research (INSAR)",
+    "role": "Student Member"
+  },
+  {
+    "name": "International Neuropsychology Society (INS)",
+    "role": "Student Member"
+  },
+  {
+    "name": "Society for Research in Child Development (SRCD)",
+    "role": "Student Member"
+  },
+  {
+    "name": "American Association of Clinical Neuropsychology (AACN)",
+    "role": "Student Member"
+  },
+  {
+    "name": "Association for Behavioral and Cognitive Therapies (ABCT)",
+    "role": "Student Member"
+  },
+  {
+    "name": "Society for Clinical Child and Adolescent Psychology (SCCAP Div. 53)",
+    "where": "Bilingual Psychologists SIG & Clinical Child and Adolescent SIG"
+  },
+  {
+    "name": "National Latinx Psychological Association (NLPA)",
+    "role": "Student Member"
+  }
+]

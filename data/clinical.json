@@ -1,0 +1,36 @@
+[
+  {
+    "key": "UNSTK",
+    "title": "Unstuck and On Target: High School Intervention",
+    "location": {
+      "lab": "Center for Autism Spectrum Disorders",
+      "where": "Children's National Hospital"
+    },
+    "when": {
+      "start": "10/2022",
+      "end": "Current"
+    },
+    "description": [
+      "Prepared intervention materials including lesson plans, interventionist manuals, student workbooks, parent handouts, and group activity materials.",
+      "Lead weekly group supervision meetings, prepared videos to review, documented student progress, and supported problem-solving methods to help with successful implementation of the intervention.",
+      "Led group activities and worked one-on-one with students to help promote flexible problem-solving and planning for autistic teens (ages 14-19).",
+      "Coordinated therapy team for teens who expressed suicidal ideation. Facilitated communication between school psychologist, counselors, community mental health providers, clinicians, and families to monitor mental health of the teens."
+    ]
+  },
+  {
+    "key": "LIFESKS",
+    "title": "Life Skills Program Leader and Spanish Interpreter",
+    "location": {
+      "where": "Washington, D.C.",
+      "lab": "Latin American Youth Center"
+    },
+    "when": {
+      "start": "01/2023",
+      "end": "Current"
+    },
+    "description": [
+      "Developed and lead group activities to promote a positive transition to adulthood for Latine, Black, and LGBTQ youth (ages 16-25) experiencing homelessness, immigration challenges, and unsafe/abusive households.",
+      "Independently prepared lessons and provided Spanish interpretation on several topics including self-care, time management, drug and alcohol education, healthy relationships, budgeting and financial management, job search, and interview preparation."
+    ]
+  }
+]
