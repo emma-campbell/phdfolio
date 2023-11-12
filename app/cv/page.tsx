@@ -127,7 +127,10 @@ export default function CV() {
             {education.map((e) => {
               return (
                 <>
-                  <div className="grid grid-cols-4 font-sans py-4">
+                  <div
+                    key={e.title}
+                    className="grid grid-cols-4 font-sans py-4"
+                  >
                     <AnimatedDiv variants={contentVariants}>
                       <Body className="mr-4" textSize="sm">
                         {e.when.start} - {e.when.end}
@@ -175,7 +178,7 @@ export default function CV() {
                           {r.locations.map((l) => {
                             return (
                               <>
-                                <Body textSize="xs">
+                                <Body key={l.where} textSize="xs">
                                   {l?.department}, {l.where}
                                 </Body>
                               </>
@@ -203,7 +206,7 @@ export default function CV() {
             <ul>
               {clinical.map((c) => {
                 return (
-                  <li>
+                  <li key={c.title}>
                     <AnimatedDiv variants={contentVariants}>
                       <Heading level={6}>{c.title}</Heading>
                     </AnimatedDiv>
@@ -220,7 +223,7 @@ export default function CV() {
             <ul className="text-sm space-y-1 pt-2">
               {affiliations.map((a) => {
                 return (
-                  <AnimatedLi>
+                  <AnimatedLi key={a.name}>
                     <span className="flex-col flex-wrap items-baseline">
                       <b>{a.name}</b>
                       <p className="text-xs font-sans">

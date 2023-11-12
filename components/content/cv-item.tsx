@@ -1,7 +1,7 @@
-import { FunctionComponent } from "react";
+// import { FunctionComponent } from "react";
 
-type CVItemProps<T> = {
-  items: T[];
-};
+// type CVItemProps<T> = {
+//  items: T[];
+// };
 
-export const CVItem: FunctionComponent<CVItemProps<T>> = () => {};
+// export const CVItem: FunctionComponent<CVItemProps<T>> = () => {};
