@@ -2,18 +2,9 @@
 
 import { motion } from "framer-motion";
 import { FC } from "react";
+import { AnimationProps } from "./props";
 
-type AnimatedLiProps = {
-  children: React.ReactNode;
-  className?: string;
-  id?: string;
-  animate?: any;
-  variants?: any;
-  transition?: any;
-  initial?: any;
-};
-
-const AnimatedLi: FC<AnimatedLiProps> = ({
+const AnimatedMain: FC<AnimationProps> = ({
   children,
   className,
   id,
@@ -23,7 +14,7 @@ const AnimatedLi: FC<AnimatedLiProps> = ({
   initial,
 }) => {
   return (
-    <motion.div
+    <motion.main
       className={className}
       animate={animate}
       variants={variants}
@@ -32,8 +23,8 @@ const AnimatedLi: FC<AnimatedLiProps> = ({
       id={id}
     >
       {children}
-    </motion.div>
+    </motion.main>
   );
 };
 
-export default AnimatedLi;
+export default AnimatedMain;

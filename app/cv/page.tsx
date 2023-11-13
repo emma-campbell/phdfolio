@@ -8,8 +8,10 @@ import type { Metadata } from "next";
 import { default as researchData } from "@/data/research.json";
 import { default as affiliationData } from "@/data/affiliations.json";
 import { default as clinicalData } from "@/data/clinical.json";
-import AnimatedDiv from "@/components/ui/animated-div";
-import AnimatedLi from "@/components/ui/animated-li";
+
+import AnimatedDiv from "@/components/ui/animation/div";
+import AnimatedLi from "@/components/ui/animation/li";
+import { variants, contentVariants } from "@/lib/animations";
 
 export const metadata: Metadata = {
   title: "Curriculum Vitae",
@@ -21,7 +23,6 @@ const education = [
       start: "08/2017",
       end: "05/2021",
     },
-    range: "2017 - 2021",
     title: "B.A in Psychology, B.S. Brain and Cognitive Sciences",
     subtitle: (
       <>
@@ -72,36 +73,6 @@ type Affiliation = {
 };
 
 const affiliations = affiliationData as Affiliation[];
-
-const variants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      delayChildren: 0,
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const contentVariants = {
-  hidden: {
-    opacity: 0,
-    y: -5,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "ease",
-      stiffness: 100,
-      mass: 0.3,
-      duration: 1,
-    },
-  },
-};
 
 export default function CV() {
   return (
@@ -206,11 +177,9 @@ export default function CV() {
             <ul>
               {clinical.map((c) => {
                 return (
-                  <li key={c.title}>
-                    <AnimatedDiv variants={contentVariants}>
-                      <Heading level={6}>{c.title}</Heading>
-                    </AnimatedDiv>
-                  </li>
+                  <AnimatedLi key={c.title} variants={contentVariants}>
+                    <Heading level={6}>{c.title}</Heading>
+                  </AnimatedLi>
                 );
               })}
             </ul>
@@ -223,7 +192,7 @@ export default function CV() {
             <ul className="text-sm space-y-1 pt-2">
               {affiliations.map((a) => {
                 return (
-                  <AnimatedLi key={a.name}>
+                  <AnimatedLi variants={contentVariants} key={a.name}>
                     <span className="flex-col flex-wrap items-baseline">
                       <b>{a.name}</b>
                       <p className="text-xs font-sans">
@@ -238,7 +207,9 @@ export default function CV() {
             </ul>
           </section>
         </section>
-        <Footer />
+        <AnimatedDiv variants={contentVariants}>
+          <Footer />
+        </AnimatedDiv>
       </AnimatedDiv>
     </main>
   );

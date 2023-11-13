@@ -4,6 +4,9 @@ import Footer from "@/components/ui/footer";
 import { Heading } from "@/components/ui/typography/heading";
 import { Body } from "@/components/ui/typography/body";
 import type { Metadata } from "next";
+import AnimatedMain from "@/components/ui/animation/main";
+import { contentVariants, variants } from "@/lib/animations";
+import AnimatedDiv from "@/components/ui/animation/div";
 
 export const metadata: Metadata = {
   title: "Posters",
@@ -11,17 +14,28 @@ export const metadata: Metadata = {
 
 export default function Posters() {
   return (
-    <>
-      <main className="max-w-xl px-4 md:px-0 m-auto">
+    <AnimatedMain
+      className="max-w-xl px-4 md:px-0 m-auto"
+      variants={variants}
+      initial="hidden"
+      animate="visible"
+    >
+      <AnimatedDiv variants={contentVariants}>
         <Header />
-        <section className="pb-12">
+      </AnimatedDiv>
+      <section className="pb-12">
+        <AnimatedDiv variants={contentVariants}>
           <Heading level={1}>Posters</Heading>
+        </AnimatedDiv>
+        <AnimatedDiv variants={contentVariants}>
           <Body textSize="md">
             Oops, this is incomplete. Please come back later.
           </Body>
-        </section>
+        </AnimatedDiv>
+      </section>
+      <AnimatedDiv variants={contentVariants}>
         <Footer />
-      </main>
-    </>
+      </AnimatedDiv>
+    </AnimatedMain>
   );
 }
